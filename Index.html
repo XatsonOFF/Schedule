@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Расписание</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="box mobile">
+        <div class="item h-100 w-100 d-flex align-items-center flex-column justify-content-between">
+            <h1 class="fs-1 fw-bold text-center pt-4">ПИ-202</h1>
+            <div class="row justify-content-center slider">
+                <div class="col-3 text-center">
+                    <h2 class="mb-4">⠀</h2>
+                    <h1>8:15</h1>
+                    <h1>10:00</h1>
+                    <h1>11:45</h1>
+                    <h1>13:45</h1>
+                    <h1>15:25</h1>
+                </div>
+                <div class="col-8 text-center week-1">
+                    <div data-bs-spy="scroll" data-bs-smooth-scroll="true" class="scrollspy" tabindex="0" data-bs-target="#list">
+                        <div class="Monday col px-1" id="list-item-1">
+                            <h4 class="fw-bold mb-3">Понедельник</h4>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>-</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone">
+                                <div class="item-bg">
+                                    <h1>Системная архитектура ИС</h1>
+                                    <p>507</p>
+                                </div>
+                            </div>
+                            <div class="tr-zone">
+                                <div class="item-bg">
+                                    <h1>Интернет программирование</h1>
+                                    <p>507</p>
+                                </div>
+                            </div>
+                            <div class="tr-zone">
+                                <div class="item-bg">
+                                    <h1>Проектный практикум</h1>
+                                    <p>507</p>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>-</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tuesday col px-1" id="list-item-2">
+                            <h4 class="fw-bold mb-3">Вторник</h4>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>-</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>-</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone">
+                                <div class="item-bg">
+                                    <h1>Английский</h1>
+                                    <p>405</p>
+                                </div>
+                            </div>
+                            <div class="tr-zone">
+                                <div class="item-bg">
+                                    <h1>Системная архитектура ИС</h1>
+                                    <p>507</p>
+                                </div>
+                            </div>
+                            <div class="tr-zone">
+                                <div class="item-bg">
+                                    <h1>Проектир. приложений IoT в АПК</h1>
+                                    <p>506</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Wednesday col px-1" id="list-item-3">
+                            <h4 class="fw-bold mb-3">Среда</h4>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>-</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone">
+                                <div class="item-bg">
+                                    <h1>Интернет программирование</h1>
+                                    <p>505</p>
+                                </div>
+                            </div>
+                            <div class="tr-zone">
+                                <div class="item-bg">
+                                    <h1>Матем. и имитац. моделирование</h1>
+                                    <p>507</p>
+                                </div>
+                            </div>
+                            <div class="tr-zone">
+                                <div class="item-bg">
+                                    <h1>Проектный практикум</h1>
+                                    <p>508</p>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>-</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Thursday col px-1" id="list-item-4">
+                            <h4 class="fw-bold mb-3">Четверг</h4>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>-</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>Ч</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>И</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>Л</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>Л</h1>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="Friday col px-1" id="list-item-5">
+                            <h4 class="fw-bold mb-3">Пятница</h4>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>-</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>Ч</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>И</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>Л</h1>
+                                </div>
+                            </div>
+                            <div class="tr-zone" id="l-none">
+                                <div class="item-bg">
+                                    <h1>Л</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 text-center week-2"> 
+                <div data-bs-spy="scroll" data-bs-smooth-scroll="true" class="scrollspy" tabindex="0" data-bs-target="#list1">
+                    <div class="Monday col px-1" id="list1-item-1">
+                        <h4 class="fw-bold mb-3">Понедельник</h4>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Разработка и тест ПО</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Проектир. приложений IoT в АПК</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Интернет программирование</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Матем. и имитац. моделирование</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Tuesday col px-1" id="list1-item-2">
+                        <h4 class="fw-bold mb-3">Вторник</h4>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Эл к по ФВ</h1>
+                                <p>СЗ</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Системная архитектура ИС</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Проектир. приложений IoT в АПК</h1>
+                                <p>506</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Wednesday col px-1" id="list1-item-3">
+                        <h4 class="fw-bold mb-3">Среда</h4>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Интернет программирование</h1>
+                                <p>505</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Матем. и имитац. моделирование</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Разработка и тест. ПО</h1>
+                                <p>419</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Thursday col px-1" id="list1-item-4">
+                        <h4 class="fw-bold mb-3">Четверг</h4>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Ч</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>И</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                    </div>     
+                    <div class="Friday col px-1" id="list1-item-5">
+                        <h4 class="fw-bold mb-3">Пятница</h4>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Ч</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>И</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="d-flex text-center justify-content-center mt-3">
+                <div class="dropup-center dropup position-absolute start-0 bottom-0">
+                    <button class="btn" type="button" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu py-0 mb-1 text-center">
+                      <li><a class="dd-day dropdown-item py-1 hover" href="#">Д</a></li>
+                      <li><a class="dd-week dropdown-item py-1" href="#">Н</a></li>
+                    </ul>
+                </div>
+                <div class="lists">
+                    <div id="list" class="btn-day list-group d-flex flex-row fw-bold">
+                        <a class="list-item" href="#list-item-1">ПН</a>
+                        <a class="list-item" href="#list-item-2">ВТ</a>
+                        <a class="list-item" href="#list-item-3">СР</a>
+                        <a class="list-item" href="#list-item-4">ЧТ</a>
+                        <a class="list-item" href="#list-item-5">ПТ</a>
+                    </div>
+                    <div id="list1" class="btn-day1 list-group d-flex flex-row fw-bold">
+                        <a class="list-item" href="#list1-item-1">ПН</a>
+                        <a class="list-item" href="#list1-item-2">ВТ</a>
+                        <a class="list-item" href="#list1-item-3">СР</a>
+                        <a class="list-item" href="#list1-item-4">ЧТ</a>
+                        <a class="list-item" href="#list1-item-5">ПТ</a>
+                    </div>
+                </div>
+                <div class="btn-week list-group d-flex flex-row fw-bold hide">
+                    <a class="list-item bw-1">1</a>
+                    <a class="list-item bw-2">2</a>
+                </div>
+            </div>
+        </div>    
+
+            <!-- ТУТУТТУТУТУТУТТУ!!!!!!!!!!!!!!!!!!!! -->
+
+        <div class="h-100 d-flex align-items-center item">
+            <div class="container">
+                <h1 class="fs-1 fw-bold text-center mb-5">Экзамены и зачеты</h1>
+                <div class="row text-center d-flex justify-content-center">
+                    <div class="col p-1">
+                        <div class="ex">
+                            <h1>Английский</h1>
+                            <p>Экзамен</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Интернет программирование</h1>
+                            <p>Экзамен</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Матем и имитац моделирование</h1>
+                            <p>Зачет дифф.</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Ознакомительная практика</h1>
+                            <p>Зачет дифф.</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Проектир. приложений IoT в АПК</h1>
+                            <p>Экзамен</p>
+                        </div>
+                    </div>
+                    <div class="col p-1">
+                        <div class="ex">
+                            <h1>Проектный практикум</h1>
+                            <p>Зачет</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Разработка и тест. ПО</h1>
+                            <p>Зачет дифф. / Курсовая</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Системная архитектура ИС</h1>
+                            <p>Зачет</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Эксплуатационная практика</h1>
+                            <p>Зачет дифф.</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Эл к по ФВ</h1>
+                            <p>Зачет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="box desktop">
+        <div class="container-fluid p-0 h-100 d-flex align-items-center item">
+            <div class="bg"></div>
+            <div class="container p-0">
+                <h1 class="fs-1 fw-bold text-center mb-5">ПИ-202</h1>
+                <div class="row d-flex justify-content-between text-center week-1"> 
+                    <div class="time col px-1">
+                        <h1 class="head">⠀</h1>
+                        <h1>8:15</h1>
+                        <h1>10:00</h1>
+                        <h1>11:45</h1>
+                        <h1>13:45</h1>
+                        <h1>15:25</h1>
+                    </div>
+                    <div class="Monday col px-1">
+                        <h1 class="head">ПН</h1> 
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Системная архитектура ИС</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Интернет программирование</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Проектный практикум</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Tuesday col px-1">
+                        <h1 class="head">ВТ</h1>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Английский</h1>
+                                <p>405</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Системная архитектура ИС</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Проектир. приложений IoT в АПК</h1>
+                                <p>506</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Wednesday col px-1">
+                        <h1 class="head">СР</h1>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Интернет программирование</h1>
+                                <p>505</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Матем. и имитац. моделирование</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Проектный практикум</h1>
+                                <p>508</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Thursday col px-1">
+                        <h1 class="head">ЧТ</h1>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Ч</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>И</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Friday col px-1">
+                        <h1 class="head">ПТ</h1>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Ч</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>И</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between text-center week-2"> 
+                    <div class="time col px-1">
+                        <h1 class="head">⠀</h1>
+                        <h1>8:15</h1>
+                        <h1>10:00</h1>
+                        <h1>11:45</h1>
+                        <h1>13:45</h1>
+                        <h1>15:25</h1>
+                    </div>
+                    <div class="Monday col px-1">
+                        <h1 class="head">ПН</h1>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Разработка и тест ПО</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Проектир. приложений IoT в АПК</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Интернет программирование</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Матем. и имитац. моделирование</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Tuesday col px-1">
+                        <h1 class="head">ВТ</h1>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Эл к по ФВ</h1>
+                                <p>СЗ</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Системная архитектура ИС</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Проектир. приложений IoT в АПК</h1>
+                                <p>506</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Wednesday col px-1">
+                        <h1 class="head">СР</h1>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Интернет программирование</h1>
+                                <p>505</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Матем. и имитац. моделирование</h1>
+                                <p>507</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone">
+                            <div class="item-bg">
+                                <h1>Разработка и тест. ПО</h1>
+                                <p>419</p>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Thursday col px-1">
+                        <h1 class="head">ЧТ</h1>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Ч</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>И</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Friday col px-1">
+                        <h1 class="head">ПТ</h1>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Ч</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>И</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                        <div class="tr-zone" id="l-none">
+                            <div class="item-bg">
+                                <h1>Л</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons text-center mt-3">
+                    <div class="d-flex justify-content-center fs-2">
+                        <div data-toggle="tab" class="button bw-1 onclick">1</div>
+                        <div data-toggle="tab" class="button bw-2">2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0 h-100 d-flex align-items-center item">
+            <div class="container">
+                <h1 class="fs-1 fw-bold text-center mb-5">Экзамены и зачеты</h1>
+                <div class="row text-center d-flex justify-content-center">
+                    <div class="col-4 p-1">
+                        <div class="ex">
+                            <h1>Английский</h1>
+                            <p>Экзамен</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Интернет программирование</h1>
+                            <p>Экзамен</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Матем и имитац моделирование</h1>
+                            <p>Зачет дифф.</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Ознакомительная практика</h1>
+                            <p>Зачет дифф.</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Проектир. приложений IoT в АПК</h1>
+                            <p>Экзамен</p>
+                        </div>
+                    </div>
+                    <div class="col-4 p-1">
+                        <div class="ex">
+                            <h1>Проектный практикум</h1>
+                            <p>Зачет</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Разработка и тест. ПО</h1>
+                            <p>Зачет дифф. / Курсовая</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Системная архитектура ИС</h1>
+                            <p>Зачет</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Эксплуатационная практика</h1>
+                            <p>Зачет дифф.</p>
+                        </div>
+                        <div class="ex">
+                            <h1>Эл к по ФВ</h1>
+                            <p>Зачет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+
+        // Dropdown меню 
+
+        let ddDay = document.querySelector('.dd-day');
+        let ddWeek = document.querySelector('.dd-week');
+        let btnWeek = document.querySelector('.btn-week');
+        let lists = document.querySelector('.lists');
+
+
+        ddDay.onclick = function() {
+            lists.classList.remove('hide');
+            ddDay.classList.add('hover');
+            ddWeek.classList.remove('hover');
+            btnWeek.classList.add('hide');
+        };
+
+        ddWeek.onclick = function() {
+            lists.classList.add('hide');
+            ddWeek.classList.add('hover');
+            ddDay.classList.remove('hover');
+            btnWeek.classList.remove('hide');
+        };
+
+        // Определение четности недели
+
+        var year = new Date().getFullYear();
+        var month = new Date().getMonth();
+        var today = new Date(year, month, 0).getTime();
+        var now = new Date().getTime();
+        var week = Math.ceil((now - today) / (1000 * 60 * 60 * 24 * 7));
+
+        // Определение дня недели
+
+        let MonSelect = document.querySelectorAll(".Monday");
+        let TueSelect = document.querySelectorAll('.Tuesday');
+        let WenSelect = document.querySelectorAll('.Wednesday');
+        let ThuSelect = document.querySelectorAll('.Thursday');
+        let FrSelect = document.querySelectorAll('.Friday');
+        let Scroll = document.querySelectorAll('.scrollspy');
+
+        var date = new Date().getDay();
+
+        // Отображение нужного дня недели
+
+        if (date == 1) {
+            MonSelect[2].classList.add('week-select');
+            MonSelect[3].classList.add('week-select');
+            if (week % 2) {
+                setTimeout(function() {document.querySelector('a[href*="list-item-1"]').click()}, 1000);  
+            }
+            else {
+                setTimeout(function() {document.querySelector('a[href*="list1-item-1"]').click()}, 1000);  
+            }
+        }
+        if (date == 2) {
+            TueSelect[2].classList.add('week-select');
+            TueSelect[3].classList.add('week-select');
+            if (week % 2) {
+                setTimeout(function() {document.querySelector('a[href*="list-item-2"]').click()}, 1000);  
+            }
+            else {
+                setTimeout(function() {document.querySelector('a[href*="list1-item-2"]').click()}, 1000);  
+            }
+
+        }
+        if (date == 3) {
+            WenSelect[2].classList.add('week-select');
+            WenSelect[3].classList.add('week-select');
+            if (week % 2) {
+                setTimeout(function() {document.querySelector('a[href*="list-item-3"]').click()}, 1000);  
+            }
+            else {
+                setTimeout(function() {document.querySelector('a[href*="list1-item-3"]').click()}, 1000);  
+            }
+        }
+        if (date == 4) {
+            ThuSelect[2].classList.add('week-select');
+            ThuSelect[3].classList.add('week-select');   
+            if (week % 2) {
+                setTimeout(function() {document.querySelector('a[href*="list-item-4"]').click()}, 1000);  
+            }
+            else {
+                setTimeout(function() {document.querySelector('a[href*="list1-item-4"]').click()}, 1000);  
+            }        
+        }
+        if (date == 5) {
+            FrSelect[2].classList.add('week-select');
+            FrSelect[3].classList.add('week-select');
+            if (week % 2) {
+                setTimeout(function() {document.querySelector('a[href*="list-item-5"]').click()}, 1000);  
+            }
+            else {
+                setTimeout(function() {document.querySelector('a[href*="list1-item-5"]').click()}, 1000);  
+            }
+        }
+        else {
+            
+        };
+
+        //
+
+        let week1 = document.querySelectorAll('.week-1');
+        let week2 = document.querySelectorAll('.week-2');
+        let button1 = document.querySelectorAll('.bw-1');
+        let button2 = document.querySelectorAll('.bw-2');
+        let btnDay = document.querySelector('.btn-day');
+        let btnDay1 = document.querySelector('.btn-day1');
+
+
+            // Кнопки переключения недели
+
+        
+            button1[0].onclick = function() {
+                console.log('1');
+
+                button1[0].classList.add('hover');
+                button2[0].classList.remove('hover');
+
+                week2[0].classList.add('hide');
+                week1[0].classList.remove('hide');
+
+                btnDay1.classList.add('hide');
+                btnDay.classList.remove('hide');
+            }
+
+            button2[0].onclick = function() {
+                console.log('2');
+
+                button1[0].classList.remove('hover');
+                button2[0].classList.add('hover');
+
+                btnDay.classList.add('hide');
+                btnDay1.classList.remove('hide');
+
+                week1[0].classList.add('hide');
+                week2[0].classList.remove('hide');
+            }
+        
+            button1[1].onclick = function() {
+                week2[1].classList.add('hide');
+                week1[1].classList.remove('hide');
+
+                button1[1].classList.add('onclick');
+                button2[1].classList.remove('onclick');
+            };
+
+            button2[1].onclick = function() {
+                week1[1].classList.add('hide');
+                week2[1].classList.remove('hide');
+
+                button1[1].classList.remove('onclick');
+                button2[1].classList.add('onclick');
+            };
+      
+            
+        // Отображение нужной недели
+        
+        if (week % 2) {
+            
+            for (let i = 0; i < week1.length; i++) {
+                week2[1].classList.add('hide');
+                week1[1].classList.remove('hide');
+            }
+
+            button1[1].classList.add('onclick');
+            button1[0].classList.add('hover');
+            button2[1].classList.remove('onclick');
+            button2[0].classList.remove('hover');
+            
+            setTimeout(function() {lists.classList.add('hide');}, 100);
+            setTimeout(function() {week2[0].classList.add('hide');}, 100);
+            setTimeout(function() {btnDay1.classList.add('hide');}, 100);
+            setTimeout(function() {lists.classList.remove('hide');}, 200);       
+
+        } else {
+
+            for (let i = 0; i < week1.length; i++) {
+                week1[1].classList.add('hide');
+                week2[1].classList.remove('hide');
+            }
+
+            button1[1].classList.remove('onclick');
+            button1[0].classList.remove('hover');
+            button2[1].classList.add('onclick');
+            button2[0].classList.add('hover');
+
+            setTimeout(function() {lists.classList.add('hide');}, 100);
+            setTimeout(function() {week1[0].classList.add('hide');}, 100);
+            setTimeout(function() {btnDay.classList.add('hide');}, 100);
+            setTimeout(function() {lists.classList.remove('hide');}, 200);
+        };
+        
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
