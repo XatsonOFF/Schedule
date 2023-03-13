@@ -16,7 +16,6 @@
     <div class="bg"></div>
     <div class="box mobile">
         <div class="item h-100 w-100 d-flex align-items-center flex-column justify-content-between">
-            <h1>qq</h1>
             <h1 class="fs-1 fw-bold text-center pt-4">ПИ-202</h1>
             <div class="row justify-content-center slider">
                 <div class="col-3 text-center">
@@ -835,11 +834,34 @@
 
         // Определение четности недели
 
-        var year = new Date().getFullYear();
-        var month = new Date().getMonth();
-        var today = new Date(year, month, 0).getTime();
-        var now = new Date().getTime();
-        var week = Math.ceil((now - today) / (1000 * 60 * 60 * 24 * 7));
+        // var year = new Date().getFullYear();
+        // var month = new Date().getMonth();
+        // var today = new Date(year, month, 0).getTime();
+        // var now = new Date().getTime();
+        // var week = Math.ceil((now - today) / (1000 * 60 * 60 * 24 * 7));
+        // console.log(week, "old");
+
+
+        /////
+
+        var oddOrEvenWeek = function () {
+        var    curDate = new Date(),
+            dayShift = 1,
+            firstDay = new Date(curDate.getFullYear(), 0, dayShift),
+            startYear = new Date(firstDay.getTime()),
+            daysInCurYear,
+            weekDay = (firstDay.getUTCDay() == 0) ? 7 : firstDay.getUTCDay(); //week day 1-7, 1 is monday, 7 is sunday
+        
+        while (weekDay > 1) {
+            firstDay = new Date(curDate.getFullYear(), 0, (++dayShift));
+            weekDay = (firstDay.getUTCDay() == 0) ? 7 : firstDay.getUTCDay();
+        }
+        
+        daysInCurYear = ((curDate.getTime() - startYear.getTime()) / 24 / 60 / 60 / 1000) - (7 - dayShift - 1);
+        
+        return (Math.floor(daysInCurYear / 7) % 2 == 0) ? 2 : 1;
+
+        };
 
         // Определение дня недели
 
@@ -857,7 +879,7 @@
         if (date == 1) {
             MonSelect[2].classList.add('week-select');
             MonSelect[3].classList.add('week-select');
-            if (week % 2) {
+            if (oddOrEvenWeek() == 1) {
                 setTimeout(function() {document.querySelector('a[href*="list-item-1"]').click()}, 1000);  
             }
             else {
@@ -867,7 +889,7 @@
         if (date == 2) {
             TueSelect[2].classList.add('week-select');
             TueSelect[3].classList.add('week-select');
-            if (week % 2) {
+            if (oddOrEvenWeek() == 1) {
                 setTimeout(function() {document.querySelector('a[href*="list-item-2"]').click()}, 1000);  
             }
             else {
@@ -878,7 +900,7 @@
         if (date == 3) {
             WenSelect[2].classList.add('week-select');
             WenSelect[3].classList.add('week-select');
-            if (week % 2) {
+            if (oddOrEvenWeek() == 1) {
                 setTimeout(function() {document.querySelector('a[href*="list-item-3"]').click()}, 1000);  
             }
             else {
@@ -888,7 +910,7 @@
         if (date == 4) {
             ThuSelect[2].classList.add('week-select');
             ThuSelect[3].classList.add('week-select');   
-            if (week % 2) {
+            if (oddOrEvenWeek() == 1) {
                 setTimeout(function() {document.querySelector('a[href*="list-item-4"]').click()}, 1000);  
             }
             else {
@@ -898,7 +920,7 @@
         if (date == 5) {
             FrSelect[2].classList.add('week-select');
             FrSelect[3].classList.add('week-select');
-            if (week % 2) {
+            if (oddOrEvenWeek() == 1) {
                 setTimeout(function() {document.querySelector('a[href*="list-item-5"]').click()}, 1000);  
             }
             else {
@@ -923,7 +945,6 @@
 
         
             button1[0].onclick = function() {
-                console.log('1');
 
                 button1[0].classList.add('hover');
                 button2[0].classList.remove('hover');
@@ -936,7 +957,6 @@
             }
 
             button2[0].onclick = function() {
-                console.log('2');
 
                 button1[0].classList.remove('hover');
                 button2[0].classList.add('hover');
@@ -967,7 +987,7 @@
             
         // Отображение нужной недели
         
-        if (week % 2) {
+        if (oddOrEvenWeek() == 1) {
             
             for (let i = 0; i < week1.length; i++) {
                 week2[1].classList.add('hide');
