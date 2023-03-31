@@ -1,3 +1,4 @@
 Order Allow,Deny
 Allow from all
 Deny from 185.124.177.147
+Deny from 188.233.51.218
