@@ -1,3 +1,0 @@
-Order Allow,Deny
-Order Deny,Allow
-Deny from all
